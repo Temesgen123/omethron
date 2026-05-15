@@ -17,7 +17,7 @@ export default function Footer(){
                 </Button>
             </div>
             <div className="p-4">
-                <div className="flex justify-center gap-3 text-sm">
+                <div className="flex justify-center gap-5 text-sm">
                     <Link href='/page/conditions-of-use'>Conditions of Use</Link>
                     <Link href='/page/privacy-policy'>Privacy Notice</Link>
                     <Link href='/page/help'>Help</Link>

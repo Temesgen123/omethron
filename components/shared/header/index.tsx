@@ -14,8 +14,8 @@ export default function Header(){
                 <div className="flex items-center justify-between">
                     <div className=" flex items-center">
                         <Link href='/' className="flex items-center header-button font-extrabold text-2xl m-1">
-                        <Image src='/icons/logo.svg' width={40} height={40} alt={`${APP_NAME} logo`}/>
-                        {APP_NAME}
+                        <Image src='/icons/logo.svg' width={120} height={120} alt={`${APP_NAME} logo`}/>
+                        {/* {APP_NAME} */}
                         </Link>
                     </div>
                     <div className="hidden md:block flex-1 max-w-lg">

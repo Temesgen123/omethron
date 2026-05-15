@@ -4,8 +4,11 @@ import {Select, SelectContent, SelectItem, SelectTrigger, SelectValue} from "@/c
 import { APP_NAME } from "@/lib/constants";
 
 //const categories = ['All', 'Electronics', 'Clothing', 'Home', 'Beauty', 'Sports', 'Toys', 'Other'];
-const categories = ['Men', 'Women', 'Kids', 'Accessories', 'Home', 'Beauty', 'Sports', 'Toys', 'Other']; //TODO: Add more categories
-
+// const categories = ['Men', 'Women', 'Kids', 'Accessories', 'Home', 'Beauty', 'Sports', 'Toys', 'Smartphones', 'Laptops', 'Computers', 'Books', 'Other']; //TODO: Add more categories
+const categories = ['Electronics', 'Fashion', 'Home & Kitchen', 'Beauty & Personal Care',
+     'Health & Household', 'Grocery & Gourmet Food', 'Baby Products', 'Toys & Games', 'Sports & Outdoors', 
+     'Automotive', 'Tools & Home Improvement', 'Pet Supplies', 'Office Products', 'Books & Media',
+     'Digital Products', 'Industrial & Scientific', 'Handmade/Artisan', 'Seasonal & Holiday']
 export default async function Search() {
   return (
     <form action={"/search"} method="GET" className="flex items-stretch h-8">
