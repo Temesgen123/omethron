@@ -49,8 +49,7 @@
 }
 
 :root {
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
+  /* Dark Navy Base - Light Mode (keeping consistent) */
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
@@ -81,9 +80,12 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.145 0 0);
 }
 
 .dark {
+  /* Dark Navy Theme - Deep Navy Blue for E-commerce */
   --background: oklch(0.145 0 0);
   --foreground: oklch(0.985 0 0);
   --card: oklch(0.205 0 0);
@@ -127,4 +129,38 @@
   html {
     @apply font-sans;
   }
+}
+
+@layer utilities {
+  header-button {
+    @apply cursor-pointer p-1 border border-transparent hover:border-white rounded-[2px];
+  }
+  h1-bold {
+    @apply font-bold text-2xl lg:text-3xl;
+  }
+
+  /* E-commerce specific utilities */
+  /* .product-card {
+    @apply bg-card border border-border rounded-lg hover:shadow-lg transition-all duration-200 hover:-translate-y-1;
+  }
+
+  .price-primary {
+    @apply text-primary font-bold text-xl;
+  }
+
+  .price-original {
+    @apply text-muted-foreground line-through text-sm;
+  }
+
+  .discount-badge {
+    @apply bg-destructive text-white text-xs font-semibold px-2 py-0.5 rounded-full;
+  }
+
+  .btn-primary-custom {
+    @apply bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-200 rounded-lg px-4 py-2 font-medium;
+  }
+
+  .btn-outline-custom {
+    @apply border border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-200 rounded-lg px-4 py-2 font-medium;
+  } */
 }
