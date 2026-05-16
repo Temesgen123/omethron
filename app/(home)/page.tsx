@@ -1,14 +1,11 @@
-import { Button } from "@/components/ui/button";
+
+import { HomeCarousel } from "@/components/shared/home/home-carousel";
+import data from "@/lib/data";
+
 
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center 
-      justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-       <h1 className="h1-bold text-center p-10">Home Page Content</h1>
-       <Button>Click Here</Button>
-      </main>
-    </div>
+    <HomeCarousel  items={data.carousels}/>
   );
 }
